@@ -1,7 +1,10 @@
 # graphql
 ## Types
 - variables: preceded by $ (ex. $title: String!)
-## Root Object Type
+## graphql as Query Language
+graphql is parsed into abstract syntax tree validated before the operation runs. curly brackets comes after each operation containing operations' selection sets.
+## Root Object Type / Operation Types
+### Query
 ### Mutations
 Perform data change that affects the state of the backend data.
 #### Syntax
@@ -24,3 +27,8 @@ mutation createsong {
   }
 }
 ```
+### Subscription
+real-time updates on API schema as fields. unsubscribe by closing the window
+## Other Query Language Feature
+### Introspection
+gives query details about the current API's schema.
